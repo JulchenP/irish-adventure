@@ -1,0 +1,38 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.hero {
+  display: flex;
+  background-image: url(/images/pexels-aziz-salem-5244224.gif);
+  background-size: cover;
+  margin: 0 auto;
+  padding: 20px 60px;
+  text-align: center;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.restaurantTeaser,
+.barsNightlifeTeaser,
+.attractionsTeaser,
+.attractionsIrelandTeaser {
+  padding: 50px;
+  height: 600px;
+}
+
+.navbar-custom {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+.navbar-toggler  {
+  background-color: black;
+}
