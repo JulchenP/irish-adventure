@@ -1,3 +1,8 @@
+:root {
+  --headline-fonts: "Oranienbaum", serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -5,6 +10,25 @@ body {
 
 h1 {
   text-transform: uppercase;
+  font-family: var(--headline-fonts);
+  line-height: 3rem;
+  letter-spacing: 3.5px;
+  font-size: 42px;
+}
+
+h2 {
+  font-family: var(--headline-fonts);
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+  font-size: 26px;
+}
+
+.heroParagraph {
+  font-family: var(--secondary-font);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-top: 10px;
 }
 
 .hero {
