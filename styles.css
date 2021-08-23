@@ -13,14 +13,18 @@ h1 {
   font-family: var(--headline-fonts);
   line-height: 3rem;
   letter-spacing: 3.5px;
-  font-size: 42px;
+  font-size: 80px;
+  letter-spacing: 30px;
+  color: #e57a44;
+  padding: 0 150px;
+  line-height: 100px;
 }
 
 h2 {
   font-family: var(--headline-fonts);
-  line-height: 2rem;
-  letter-spacing: 1.5px;
-  font-size: 26px;
+  font-size: 40px;
+  letter-spacing: 3.5px;
+  color: white;
   text-transform: uppercase;
   border-bottom: solid 1px #4ba258;
   color: #4ba258;
@@ -28,50 +32,45 @@ h2 {
 
 p {
   font-family: var(--secondary-font);
-  font-size: 16px;
-  line-height: 1.5rem;
-  letter-spacing: 0.5px;
-}
-
-.heroParagraph {
-  font-family: var(--secondary-font);
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
-  padding-top: 10px;
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 .hero {
   display: flex;
   background-size: cover;
-  background-color: black;
+  background-color: #181d27;
   margin: 0 auto;
   padding: 20px 60px;
   text-align: center;
-  height: 800px;
+  height: 900px;
   justify-content: center;
   align-items: center;
   color: white;
 }
 
-.text {
-  position: relative;
-}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.4;
+    padding: 0;
+  }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  h2 {
+    line-height: 2rem;
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding: 0;
+  }
 
-video {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-iframe {
-  width: 1920px;
+  p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    padding: 15px 0;
+  }
 }
