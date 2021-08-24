@@ -2,7 +2,7 @@
   --headline-fonts: "Oranienbaum", serif;
   --secondary-font: "Quicksand", sans-serif;
   --border-color: #e57a44;
-  --clover-color: #4ba258;
+  --clover-color: #3a7d44;
 }
 
 body {
@@ -60,7 +60,7 @@ p .hero {
   padding-bottom: 30px;
 }
 
-.content {
+.lookingFor {
   padding: 0 250px;
 }
 
@@ -103,7 +103,7 @@ p .hero {
 }
 
 .content {
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .activityImages {
@@ -122,6 +122,36 @@ p .hero {
 
 .activityCards:hover {
   transform: scale(1.05);
+}
+
+.needAdvice {
+  background-color: #dfeadf;
+  padding: 40px 250px;
+  margin-top: 50px;
+}
+
+.accordion-button {
+  font-family: var(--secondary-font);
+  color: var(--clover-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 20px 10px;
+}
+
+.accordion-button.collapsed {
+  background-color: #dfeadf;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--clover-color);
+  color: white;
+}
+
+.accordion-body {
+  background-color: #dfeadf;
+  font-family: var(--secondary-font);
+  color: var(--clover-color);
 }
 
 @media (max-width: 900px) {
