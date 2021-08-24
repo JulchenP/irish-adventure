@@ -60,8 +60,10 @@ p .hero {
   padding-bottom: 30px;
 }
 
-.lookingFor {
-  padding: 0 250px;
+.lookingFor,
+.about,
+.needAdvice {
+  padding: 40px 250px;
 }
 
 .slider {
@@ -106,6 +108,12 @@ p .hero {
   margin: 50px 0;
 }
 
+.containerFooter {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
 .activityImages {
   border-radius: 20px 20px 0 0;
   border-color: var(--border-color);
@@ -126,7 +134,6 @@ p .hero {
 
 .needAdvice {
   background-color: #dfeadf;
-  padding: 40px 250px;
   margin-top: 50px;
 }
 
@@ -146,6 +153,10 @@ p .hero {
 .accordion-button:not(.collapsed) {
   background-color: var(--clover-color);
   color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
 }
 
 .accordion-body {
