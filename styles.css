@@ -28,6 +28,7 @@ h1 {
   color: #e57a44;
   padding: 0 150px;
   line-height: 120px;
+  margin-bottom: 35px;
 }
 
 h2 {
@@ -72,14 +73,26 @@ p .hero {
   padding: 50px;
 }
 
+.temp {
+  background-color: #181d27;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+}
+
 .hero {
   display: flex;
-  background-size: cover;
   background-color: #181d27;
   margin: 0 auto;
   padding: 20px 60px;
   text-align: center;
-
   justify-content: center;
   align-items: center;
   color: white;
@@ -165,11 +178,21 @@ p .hero {
   color: var(--clover-color);
 }
 
+.soon {
+  text-align: center;
+  background-color: var(--border-color);
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 30px;
     line-height: 1.4;
     padding: 0;
+    margin-bottom: 35px;
+    text-align: center;
   }
 
   h2 {
@@ -188,6 +211,11 @@ p .hero {
   }
 
   .mainText {
-    padding: 40px;
+    padding: 0px;
+  }
+
+  .hero {
+    height: 800px;
+    padding: 20px;
   }
 }
