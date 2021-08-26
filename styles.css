@@ -26,7 +26,6 @@ h1 {
   line-height: 3rem;
   letter-spacing: 30px;
   color: #e57a44;
-  padding: 0 150px;
   line-height: 120px;
   margin-bottom: 35px;
   text-align: center;
@@ -53,6 +52,7 @@ h3 {
 p {
   font-family: var(--secondary-font);
   font-weight: 400;
+  letter-spacing: 1rem;
 }
 
 p .hero {
@@ -189,6 +189,17 @@ p .hero {
   font-weight: 900;
 }
 
+.heroText {
+  padding-top: 20px;
+}
+
+.heyThorben {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  line-height: 5px;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 50px;
@@ -204,7 +215,7 @@ p .hero {
     letter-spacing: 2px;
     font-size: 28px;
     text-transform: uppercase;
-    padding: 15px 0 30px 0;
+    padding: 0 0 25px 0;
   }
 
   p {
@@ -231,5 +242,9 @@ p .hero {
     align-items: center;
     display: inline-flex;
     padding: 50px;
+  }
+  .heyThorben {
+    letter-spacing: 0.2rem;
+    line-height: 30px;
   }
 }
