@@ -190,27 +190,27 @@ p .hero {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 40px;
+    font-size: 45px;
     padding: 0;
     margin-bottom: 35px;
     text-align: center;
-    line-height: 3.5rem;
-    letter-spacing: 1.5px;
+    line-height: 3rem;
+    letter-spacing: 1.8px;
   }
 
   h2 {
     line-height: 2rem;
     letter-spacing: 1.5px;
-    font-size: 24px;
+    font-size: 26px;
     text-transform: uppercase;
     padding: 0;
   }
 
-  p .heroText {
-    font-size: 10px;
-    line-height: 1.5rem;
+  p {
+    font-size: 12px;
+    line-height: 1.3rem;
     letter-spacing: 0.5px;
-    padding: 15px 0;
+    margin: 0;
   }
 
   .hero {
@@ -226,7 +226,6 @@ p .hero {
     left: 0;
     min-width: 100%;
     min-height: 100%;
-
     justify-content: center;
     align-items: center;
     display: inline-flex;
