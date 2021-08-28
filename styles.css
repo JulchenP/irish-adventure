@@ -1,8 +1,9 @@
 :root {
-  --headline-fonts: "Oranienbaum", serif;
-  --secondary-font: "Quicksand", sans-serif;
+  --headline-fonts: "normalidad-wide", sans-serif;
+  --secondary-font: "azo-sans-web", sans-serif;
   --border-color: #e57a44;
   --clover-color: #3a7d44;
+  --darkness: #181d27;
 }
 
 body {
@@ -18,13 +19,13 @@ h3 {
 h1,
 h2 {
   font-family: var(--headline-fonts);
-  letter-spacing: 3.5px;
 }
 
 h1 {
   font-size: 100px;
+  font-weight: 900;
   line-height: 3rem;
-  letter-spacing: 30px;
+  letter-spacing: 10px;
   color: #e57a44;
   line-height: 120px;
   margin-bottom: 35px;
@@ -32,27 +33,26 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
-  color: white;
+  font-size: 32px;
+  font-weight: 400;
   border-bottom: solid 1px #4ba258;
-  color: #4ba258;
+  color: var(--clover-color);
   margin-bottom: 40px;
+  letter-spacing: 0.25rem;
 }
 
 h3 {
   font-family: var(--secondary-font);
+  font-style: italic;
   color: white;
   font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  font-weight: 400;
+  letter-spacing: 1.25px;
   margin: 0 !important ;
-  padding: 15px 5px;
 }
 
 p {
   font-family: var(--secondary-font);
-  font-weight: 400;
-  letter-spacing: 1rem;
 }
 
 p .hero {
@@ -60,12 +60,29 @@ p .hero {
   line-height: 28px;
   padding-top: 80px;
   padding-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--border-color);
+  cursor: pointer;
+}
+
+a:hover {
+  font-style: italic;
+  color: var(--border-color);
+  font-weight: bold;
 }
 
 .lookingFor,
-.about,
 .needAdvice {
   padding: 40px 250px;
+}
+
+.about {
+  padding: 50px 250px 0;
 }
 
 .slider {
@@ -101,15 +118,18 @@ p .hero {
 
 .slider-home {
   display: flex;
-  background-size: auto;
-  background-color: #181d27;
-  margin: 0 auto;
-  padding: 20px 60px;
-  text-align: center;
-  height: 750px;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-color: var(--darkness);
+  padding: 20px 60px;
+  text-align: center;
   color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #arrow {
@@ -157,7 +177,7 @@ p .hero {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
   padding: 20px 10px;
 }
 
@@ -177,6 +197,7 @@ p .hero {
   background-color: #dfeadf;
   font-family: var(--secondary-font);
   color: var(--clover-color);
+  letter-spacing: 0.25px;
 }
 
 .soon {
@@ -198,6 +219,44 @@ p .hero {
   font-weight: bold;
   letter-spacing: 0.2rem;
   line-height: 5px;
+}
+
+.navbar {
+  background-color: var(--darkness);
+}
+
+.nav-link {
+  font-family: var(--headline-fonts);
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--border-color);
+  font-weight: 400;
+}
+
+.nav-link:active {
+  color: var(--border-color);
+}
+
+.navbar-brand {
+  font-family: var(--headline-fonts);
+  text-transform: uppercase;
+  color: var(--clover-color);
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  padding: 0 10px;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  padding: 0 25px;
 }
 
 @media (max-width: 900px) {
