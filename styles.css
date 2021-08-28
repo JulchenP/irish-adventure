@@ -250,6 +250,10 @@ a:hover {
   font-size: 1.5rem;
 }
 
+.navbar-brand:hover {
+  color: var(--clover-color);
+}
+
 .nav-item {
   padding: 0 10px;
   letter-spacing: 0.5px;
