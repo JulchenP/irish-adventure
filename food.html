@@ -35,7 +35,7 @@
   </head>
   <body>
     <container>
-      <nav class="navbar navbar-expand-lg sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/home.html"
             >Irish <b style="color: #e57a44">Adventure</b></a
@@ -55,7 +55,7 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/food.html"
                   >Food</a
@@ -87,645 +87,719 @@
             <p class="slider">
               Here's a collection of the best food-hotspots in Dublin!
             </p>
-            <p id="arrow">↓</p>
+            <a id="arrow" href="#start">↓</a>
           </span>
         </div>
       </section>
-      <div class="needAdvice mt-0">
-        <h2 class="mb-3">How about a bite to eat?</h2>
-        <p class="textGreen">
-          Before you head out for a pint (or a few) you need to fill your
-          stomach with something delicious. To make the choice less complicated
-          and to give you an idea of the different foods available to you,
-          here's a list of my favorite restaurants all around the city.
-        </p>
-        <h4>Early Bird Menu</h4>
-        <p class="textGreen">
-          Somethign to consider when your appetite is large but your purse says
-          broke – Early Bird Menus. Most restaurants offer them and I know
-          you're familiar with the concept as we do occasionally have them in
-          Germany also (e.g. at Bun Bites Beef). Dinner time starts around 6 pm
-          in Ireland, so EBM are usally between 4 pm to 6 pm.
-        </p>
-        <p class="textGreen">
-          <b>
-            Wheter it's a tradtional irish potato dish or a yummy burrito,
-            you'll never go unsatisfied at these restaurants.
-          </b>
-        </p>
-      </div>
-      <div class="foodSelector">
-        <h2>What are you in the mood for?</h2>
+      <div class="content" id="start">
+        <div class="needAdvice mt-0">
+          <h2 class="mb-3">How about a bite to eat?</h2>
+          <p class="textGreen">
+            Before you head out for a pint (or a few) you need to fill your
+            stomach with something delicious. To make the choice less
+            complicated and to give you an idea of the different foods available
+            to you, here's a list of my favorite restaurants all around the
+            city.
+          </p>
+          <h4>Early Bird Menu</h4>
+          <p class="textGreen">
+            Somethign to consider when your appetite is large but your purse
+            says broke – Early Bird Menus. Most restaurants offer them and I
+            know you're familiar with the concept as we do occasionally have
+            them in Germany also (e.g. at Bun Bites Beef). Dinner time starts
+            around 6 pm in Ireland, so EBM are usally between 4 pm to 6 pm.
+          </p>
+          <p class="textGreen">
+            <b>
+              Wheter it's a tradtional irish potato dish or a yummy burrito,
+              you'll never go unsatisfied at these restaurants.
+            </b>
+          </p>
+        </div>
+        <div class="foodSelector">
+          <h2>What are you in the mood for?</h2>
 
-        <p>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target=".multi-collapse"
-            aria-expanded="false"
-            aria-controls="multiCollapseExample1 multiCollapseExample2"
-          >
-            Show all
-          </a>
-          <a
-            class="btn foodMenu"
-            data-bs-toggle="collapse"
-            href="#italian"
-            role="button"
-            aria-expanded="false"
-            aria-controls="italian"
-            >Italian</a
-          >
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#asian"
-            aria-expanded="false"
-            aria-controls="asian"
-          >
-            Asian
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#traditionalIrish"
-            aria-expanded="false"
-            aria-controls="traditionalIrish"
-          >
-            Traditional Irish
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#seafood"
-            aria-expanded="false"
-            aria-controls="seafood"
-          >
-            Seafood
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#american"
-            aria-expanded="false"
-            aria-controls="american"
-          >
-            American
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#middleEastern"
-            aria-expanded="false"
-            aria-controls="middleEastern"
-          >
-            Middle Eastern
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mexican"
-            aria-expanded="false"
-            aria-controls="mexican"
-          >
-            Mexican
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#veggieVegan"
-            aria-expanded="false"
-            aria-controls="veggieVegan"
-          >
-            Veggie / Vegan
-          </a>
-          <a
-            class="btn foodMenu"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#dessertsSweets"
-            aria-expanded="false"
-            aria-controls="dessertsSweets"
-          >
-            Desserts & Sweets
-          </a>
-        </p>
-        <div class="foods">
-          <div class="row">
-            <div class="collapse multi-collapse row" id="italian">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://thebigbluebusireland.files.wordpress.com/2014/02/861016_549909348420029_2135871204_o.jpg?w=500&h=373&zoom=2"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The Bernhard Shaw</h5>
-                      <p class="card-text">
-                        There’s literally a big blue bus in the backyard of this
-                        pub. They serve pizza in there! Need I say more?
-                      </p>
+          <p>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target=".multi-collapse"
+              aria-expanded="false"
+              aria-controls="multiCollapseExample1 multiCollapseExample2"
+            >
+              Show all
+            </a>
+            <a
+              class="btn foodMenu"
+              data-bs-toggle="collapse"
+              href="#italian"
+              role="button"
+              aria-expanded="false"
+              aria-controls="italian"
+              >Italian</a
+            >
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#asian"
+              aria-expanded="false"
+              aria-controls="asian"
+            >
+              Asian
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#traditionalIrish"
+              aria-expanded="false"
+              aria-controls="traditionalIrish"
+            >
+              Traditional Irish
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#seafood"
+              aria-expanded="false"
+              aria-controls="seafood"
+            >
+              Seafood
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#american"
+              aria-expanded="false"
+              aria-controls="american"
+            >
+              American
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#middleEastern"
+              aria-expanded="false"
+              aria-controls="middleEastern"
+            >
+              Middle Eastern
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mexican"
+              aria-expanded="false"
+              aria-controls="mexican"
+            >
+              Mexican
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#veggieVegan"
+              aria-expanded="false"
+              aria-controls="veggieVegan"
+            >
+              Veggie / Vegan
+            </a>
+            <a
+              class="btn foodMenu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#dessertsSweets"
+              aria-expanded="false"
+              aria-controls="dessertsSweets"
+            >
+              Desserts & Sweets
+            </a>
+          </p>
+          <div class="foods">
+            <div class="row">
+              <div class="collapse multi-collapse row" id="italian">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://thebigbluebusireland.files.wordpress.com/2014/02/861016_549909348420029_2135871204_o.jpg?w=500&h=373&zoom=2"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">The Bernhard Shaw</h5>
+                        <p class="card-text">
+                          There’s literally a big blue bus in the backyard of
+                          this pub. They serve pizza in there! Need I say more?
+                        </p>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        Cross Guns Bridge, Drumcondra, Dublin 9, D09 XW44,
-                        Irland
-                      </p>
-
-                      <p style="font-size: x-small; text-transform: uppercase">
-                        photo ©
-                        https://thebigbluebusireland.wordpress.com/about/
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="collapse multi-collapse row" id="veggieVegan">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="images/Food/cornucopia.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Cornucopia</h5>
-                      <p class="card-text">
-                        Ever feel like you need healthy, vegetarian food for a
-                        change? Me neither, but if you do, Cornucopia is the
-                        restaurant for you. It has a great selection of meals
-                        and the quality is outstanding.
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        19-20 Wicklow St, Dublin, D02 FK27, Irland
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="collapse multi-collapse row" id="middleEastern">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="/images/Food/brother-hubbard.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Brother Hubbard</h5>
-                      <p class="card-text">
-                        I’ll let the brothers talk for this one:
-                        <br />
-                        <i
-                          >„Our food is designed to offer nourishment and
-                          pleasure, and above all, you should feel better for
-                          having had it. That is not an experience that happens
-                          as often as any of us would like. We try to make pure
-                          food that is healthy and full of freshness, providing
-                          a feel-good quality without compromising on enjoyment.
-                          We don’t sermonise and ask you to change your
-                          lifestyle. We genuinely feel that this is food you
-                          might enjoy, and you might just happen to feel better
-                          after having eaten it.“</i
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
                         >
-                      </p>
-                      <p>
-                        <b
-                          >Delicious, healthy, Middle Eastern style. Perfect for
-                          breakfast, brunch, lunch and dinner.</b
+                          Cross Guns Bridge, Drumcondra, Dublin 9, D09 XW44,
+                          Irland
+                        </p>
+
+                        <p
+                          class="photoCredit"
+                          style="font-size: x-small; text-transform: uppercase"
                         >
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        <b> LOCATION NORTH </b>153 Capel St, North City, Dublin
-                        1, Irland
-                      </p>
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        <b> LOCATION SOUTH </b>46 Harrington St, Saint Kevin’s,
-                        Dublin 8, Irland
-                      </p>
+                          photo ©
+                          https://thebigbluebusireland.wordpress.com/about/
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="collapse multi-collapse" id="asian">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="/images/Food/mongolian-grill.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Mongolian Barbeque</h5>
-                      <p class="card-text">
-                        Who cares about Irish Gastro Pubs. Sometimes you need
-                        something more exotic. At the Mongolian BBQ you can
-                        stuff your plate and hand it over to a chef, who will
-                        fire It up in front of you. Delicious!
-                      </p>
+            <div class="row">
+              <div class="collapse multi-collapse row" id="veggieVegan">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="images/Food/cornucopia.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Cornucopia</h5>
+                        <p class="card-text">
+                          Ever feel like you need healthy, vegetarian food for a
+                          change? Me neither, but if you do, Cornucopia is the
+                          restaurant for you. It has a great selection of meals
+                          and the quality is outstanding.
+                        </p>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        7 Anglesea St, Temple Bar, Dublin 2, D02 K376, Irland
-                      </p>
-
-                      <p style="font-size: x-small; text-transform: uppercase">
-                        photo ©
-                        https://thebigbluebusireland.wordpress.com/about/
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://media-cdn.tripadvisor.com/media/photo-s/13/14/d2/e0/photo2jpg.jpg"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Han Sung Asian Market</h5>
-                      <p class="card-text">
-                        I know it says Asian Market in the title – believe me –
-                        this is the best and most authentic asian food you'll
-                        ever taste. It's far in the back of the market, just go
-                        through.
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        22 Strand Street Great, North City, Dublin, D01 K8E8,
-                        Ireland
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="collapse multi-collapse" id="traditionalIrish">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.6435-9/192098691_4056449911074816_3522573619258268080_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_ohc=QjnqHz1sNZAAX_ZrH1l&_nc_ht=scontent-frx5-1.xx&oh=6f73303945d1382b7b78b6ed1314db9a&oe=6150AA4D"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Gallagher’s Boxty House</h5>
-                      <p class="card-text">
-                        I’ve personally never been, but if you want to try out
-                        the best potato dishes in town you have to stop by the
-                        Boxty House. It’s the restaurant Phil Rosenthal went to
-                        in season 2 on „Somebody feed Phil“.
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        20-21 Temple Bar, Dublin 2, D02 ET66, Irland
-                        <br />
-                        <a href="https://www.boxtyhouse.ie/">Website</a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://images.squarespace-cdn.com/content/v1/590af1f0e4fcb5f1d7bcfb50/1557837594163-Q2EBK5SSD9OBZA8BHI09/Soma+Location+Shots+%2818%29.jpg?format=1500w"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">SoMa Restaurant</h5>
-                      <p class="card-text"></p>
-                      <p>
-                        <b
-                          >Voted No. 7 in Dublin’s best burger restaurants
-                          (Irish Independent).
-                        </b>
-                      </p>
-                      <p>
-                        Freshly made, locally sourced burgers and other
-                        delicacies (I heard the Mexican fish tacos are nice!) up
-                        for grabs! Get in there.
-                      </p>
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        1 O'Connell Street Upper, North City, Dublin 1, D01
-                        HR04, Ireland
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://whitemoosecafe.ie/wp-content/uploads/2020/03/whitemoose.png"
-                      class="card-img-top"
-                      style="width: 456px; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">White Moose Café</h5>
-                      <p class="card-text">
-                        I’ve personally never been, but it is on my list. If you
-                        ever find yourself up north go check it out. Located
-                        inside a B&B this little café offers their famous
-                        pancake variations and other diabetes inducing
-                        delicacies. Don’t quarrel with the owner though – you
-                        made get publicly told off on his twitter account
-                        <a href="https://twitter.com/whitemoosecafe?lang=en"
-                          >@whitemoosecafe</a
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
                         >
-                        .
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        268, 272 N Circular Rd, Phibsborough, Dublin, D07 DT61,
-                        Ireland
-                      </p>
+                          19-20 Wicklow St, Dublin, D02 FK27, Irland
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="collapse multi-collapse row" id="middleEastern">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="/images/Food/brother-hubbard.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Brother Hubbard</h5>
+                        <p class="card-text">
+                          I’ll let the brothers talk for this one:
+                        </p>
+                        <p>
+                          <i
+                            >„Our food is designed to offer nourishment and
+                            pleasure, and above all, you should feel better for
+                            having had it. That is not an experience that
+                            happens as often as any of us would like. We try to
+                            make pure food that is healthy and full of
+                            freshness, providing a feel-good quality without
+                            compromising on enjoyment. We don’t sermonise and
+                            ask you to change your lifestyle. We genuinely feel
+                            that this is food you might enjoy, and you might
+                            just happen to feel better after having eaten
+                            it.“</i
+                          >
+                        </p>
+                        <p>
+                          <b
+                            >Delicious, healthy, Middle Eastern style. Perfect
+                            for breakfast, brunch, lunch and dinner.</b
+                          >
+                        </p>
 
-          <div class="row">
-            <div class="collapse multi-collapse" id="seafood">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="/images/Howth/IMG_2060_joe.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Crabby Joe's</h5>
-                      <p class="card-text">
-                        If you ever find yourself hungry on Howth you have two
-                        options: Seafood and seafood. If you want to sit down
-                        for your meal I would – and I cannot stress this enough
-                        – the restaurant with the name Crabby Joe’s. This little
-                        joint might not look like it offers great food, but it
-                        totally does. Last time I was there with my mum, we each
-                        had like 12 oysters and a whole lobster with a huge
-                        mountain of fries each and it was CHEAP AS HELL. And
-                        also delicious.
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        14 W Pier, Howth, Dublin, Irland
-                      </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          <b> LOCATION NORTH </b>153 Capel St, North City,
+                          Dublin 1, Irland
+                        </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          <b> LOCATION SOUTH </b>46 Harrington St, Saint
+                          Kevin’s, Dublin 8, Irland
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="collapse multi-collapse" id="american">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://theworkmansclub.com/wp-content/uploads/2015/05/Rooftop-Terraceb-970x420.jpg"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The Workman's Club</h5>
-                      <p class="card-text">
-                        This is not only a great pub, but it also serves
-                        delicious Burgers! On the roof! Don’t miss out on this
-                        quirkily decorated greasy rooftop-burger-joint.
-                      </p>
+            <div class="row">
+              <div class="collapse multi-collapse" id="asian">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="/images/Food/mongolian-grill.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Mongolian Barbeque</h5>
+                        <p class="card-text">
+                          Who cares about Irish Gastro Pubs. Sometimes you need
+                          something more exotic. At the Mongolian BBQ you can
+                          stuff your plate and hand it over to a chef, who will
+                          fire It up in front of you. Delicious!
+                        </p>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        10 Wellington Quay, Temple Bar, Dublin, D02 VX36, Irland
-                      </p>
-                      <p style="font-size: x-small; text-transform: uppercase">
-                        photo ©
-                        https://theworkmansclub.com/spaces/the-rooftop-terrace/
-                      </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          7 Anglesea St, Temple Bar, Dublin 2, D02 K376, Irland
+                        </p>
+
+                        <p
+                          class="photoCredit"
+                          style="font-size: x-small; text-transform: uppercase"
+                        >
+                          photo ©
+                          https://thebigbluebusireland.wordpress.com/about/
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="images/Food/pitt-bro.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Pit Bro's BBQ</h5>
-                      <p class="card-text">
-                        I don’t think I’ve EVER had such delicious BBQ. I also
-                        don’t think I’ve ever eaten less graceful. 5/5 would
-                        ALWAYS want to go.
-                      </p>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        84-88 George’s Street Upper, Dublin, A96 W8W9, Irland
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="collapse multi-collapse" id="mexican">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100 mb-2">
-                    <img
-                      src="/images/Food/mamas-revenge.jpeg"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Mama's Revenge Burrito</h5>
-                      <p class="card-text">
-                        Another great burrito place! Try it ;)
-                      </p>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://media-cdn.tripadvisor.com/media/photo-s/13/14/d2/e0/photo2jpg.jpg"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Han Sung Asian Market</h5>
+                        <p class="card-text">
+                          I know it says Asian Market in the title – believe me
+                          – this is the best and most authentic asian food
+                          you'll ever taste. It's far in the back of the market,
+                          just go through.
+                        </p>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        12 Leinster St S, Dublin 2, D02 H367, Irland
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="/images/Little Ass Burrito/IMG_4956.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Little Ass Burrito</h5>
-                      <p class="card-text">
-                        This is hands down the best burrito in town. Literally
-                        of the options are great, I do have fond memories of the
-                        chorizo burrito though ;)
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        Location 1 Temple Bar Music Centre, Curved St, Temple
-                        Bar
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        Location 2 10 Rathgar Rd, Rathmines
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="https://scontent-frx5-2.xx.fbcdn.net/v/t1.6435-9/143166329_3641598169228352_2955428742574416876_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=xUR35Vk9SsIAX-7vQcb&tn=MMOfg_zQUnO9p0bj&_nc_ht=scontent-frx5-2.xx&oh=cbb74bdb2a34b0211fad7deaae030d5b&oe=615085C1"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Tolteca</h5>
-                      <p class="card-text">
-                        Classic fast food Mexican restaurant. Chipotle vibes,
-                        Pretty good ;)
-                      </p>
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        21 Suffolk St, Dublin 2, D02 WA48, Irland
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="http://pablopicante.com/assets/Uploads/clarendon-burrito-1.jpg"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Pablo Picante</h5>
-                      <p class="card-text">
-                        Don’t go for those fast food places if you can go to
-                        independently owned restaurants. Check out Pablo
-                        Picante: The interior is quirky and colorful but most
-                        importantly, the burrito is freaking goooooood. Next to
-                        the restaurant Is the Torta Shop. Here you can get
-                        Tortas – traditional Mexican-style gourmet sandwiches.
-                      </p>
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        4 Clarendon Market, Dublin Southside, Dublin, D02 AV84,
-                        Irland
-                      </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          22 Strand Street Great, North City, Dublin, D01 K8E8,
+                          Ireland
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="collapse multi-collapse" id="dessertsSweets">
-              <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="/images/Food/murphys.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Murphy's Ice Cream</h5>
-                      <p class="card-text">
-                        It’s a hot day and you need to cool down? Or you’re just
-                        in the mood for the best ice cream in the entire world?
-                        Head down to Wicklow Street and get yourself a
-                        flavourful treat. Favourite flavours include: Gin, Sea
-                        Salt and Brown Bread Ice Cream (fucking trust me on this
-                        one!)
-                      </p>
 
-                      <p>
-                        <b>
-                          And hey, if you ever find yourself in Dingle, check
-                          out the original shop there!
-                        </b>
-                      </p>
+            <div class="row">
+              <div class="collapse multi-collapse" id="traditionalIrish">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.6435-9/192098691_4056449911074816_3522573619258268080_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_ohc=QjnqHz1sNZAAX_ZrH1l&_nc_ht=scontent-frx5-1.xx&oh=6f73303945d1382b7b78b6ed1314db9a&oe=6150AA4D"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Gallagher’s Boxty House</h5>
+                        <p class="card-text">
+                          I’ve personally never been, but if you want to try out
+                          the best potato dishes in town you have to stop by the
+                          Boxty House. It’s the restaurant Phil Rosenthal went
+                          to in season 2 on „Somebody feed Phil“.
+                        </p>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        27 Wicklow St, Dublin 2, D02 WN51, Irland
-                      </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          20-21 Temple Bar, Dublin 2, D02 ET66, Irland
+                          <br />
+                          <a class="website" href="https://www.boxtyhouse.ie/"
+                            >Website</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://images.squarespace-cdn.com/content/v1/590af1f0e4fcb5f1d7bcfb50/1557837594163-Q2EBK5SSD9OBZA8BHI09/Soma+Location+Shots+%2818%29.jpg?format=1500w"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">SoMa Restaurant</h5>
+                        <p class="card-text"></p>
+                        <p>
+                          <b
+                            >Voted No. 7 in Dublin’s best burger restaurants
+                            (Irish Independent).
+                          </b>
+                        </p>
+                        <p>
+                          Freshly made, locally sourced burgers and other
+                          delicacies (I heard the Mexican fish tacos are nice!)
+                          up for grabs! Get in there.
+                        </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          1 O'Connell Street Upper, North City, Dublin 1, D01
+                          HR04, Ireland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://whitemoosecafe.ie/wp-content/uploads/2020/03/whitemoose.png"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">White Moose Café</h5>
+                        <p class="card-text">
+                          I’ve personally never been, but it is on my list. If
+                          you ever find yourself up north go check it out.
+                          Located inside a B&B this little café offers their
+                          famous pancake variations and other diabetes inducing
+                          delicacies. Don’t quarrel with the owner though – you
+                          made get publicly told off on his twitter account
+                          <a href="https://twitter.com/whitemoosecafe?lang=en"
+                            >@whitemoosecafe</a
+                          >
+                          .
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          268, 272 N Circular Rd, Phibsborough, Dublin, D07
+                          DT61, Ireland
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col mb-2">
-                  <div class="card h-100">
-                    <img
-                      src="/images/Food/Donuts/IMG_1464.JPG"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The Rolling Donut</h5>
-                      <p class="card-text">
-                        Scene. Your on O’Connell Street. Your stomach starts
-                        rumbling and you need to find a quick snack. As you walk
-                        up the streets you spot what looks like an old fashioned
-                        cinema ticket booth. As you get closer you smell the
-                        heavenly scent of fat and sugar. It’s a donut booth.
-                        You’re saved.
-                      </p>
+              </div>
+            </div>
 
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        O’Connell Street Lower, North City, Dublin, D01 P2C7,
-                        Irland
-                      </p>
+            <div class="row">
+              <div class="collapse multi-collapse" id="seafood">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="/images/Howth/IMG_2060_joe.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Crabby Joe's</h5>
+                        <p class="card-text">
+                          If you ever find yourself hungry on Howth you have two
+                          options: Seafood and seafood. If you want to sit down
+                          for your meal I would – and I cannot stress this
+                          enough – the restaurant with the name Crabby Joe’s.
+                          This little joint might not look like it offers great
+                          food, but it totally does. Last time I was there with
+                          my mum, we each had like 12 oysters and a whole
+                          lobster with a huge mountain of fries each and it was
+                          CHEAP AS HELL. And also delicious.
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          14 W Pier, Howth, Dublin, Irland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="collapse multi-collapse" id="american">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://theworkmansclub.com/wp-content/uploads/2015/05/Rooftop-Terraceb-970x420.jpg"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">The Workman's Club</h5>
+                        <p class="card-text">
+                          This is not only a great pub, but it also serves
+                          delicious Burgers! On the roof! Don’t miss out on this
+                          quirkily decorated greasy rooftop-burger-joint.
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          10 Wellington Quay, Temple Bar, Dublin, D02 VX36,
+                          Irland
+                        </p>
+                        <p
+                          class="location"
+                          style="font-size: x-small; text-transform: uppercase"
+                        >
+                          photo ©
+                          https://theworkmansclub.com/spaces/the-rooftop-terrace/
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="images/Food/pitt-bro.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Pit Bro's BBQ</h5>
+                        <p class="card-text">
+                          I don’t think I’ve EVER had such delicious BBQ. I also
+                          don’t think I’ve ever eaten less graceful. 5/5 would
+                          ALWAYS want to go.
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          84-88 George’s Street Upper, Dublin, A96 W8W9, Irland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="collapse multi-collapse" id="mexican">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100 mb-2">
+                      <img
+                        src="/images/Food/mamas-revenge.jpeg"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Mama's Revenge Burrito</h5>
+                        <p class="card-text">
+                          Another great burrito place! Try it ;)
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          12 Leinster St S, Dublin 2, D02 H367, Irland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="/images/Little Ass Burrito/IMG_4956.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Little Ass Burrito</h5>
+                        <p class="card-text">
+                          This is hands down the best burrito in town. Literally
+                          of the options are great, I do have fond memories of
+                          the chorizo burrito though ;)
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          Location 1 Temple Bar Music Centre, Curved St, Temple
+                          Bar
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          Location 2 10 Rathgar Rd, Rathmines
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://scontent-frx5-2.xx.fbcdn.net/v/t1.6435-9/143166329_3641598169228352_2955428742574416876_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=xUR35Vk9SsIAX-7vQcb&tn=MMOfg_zQUnO9p0bj&_nc_ht=scontent-frx5-2.xx&oh=cbb74bdb2a34b0211fad7deaae030d5b&oe=615085C1"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Tolteca</h5>
+                        <p class="card-text">
+                          Classic fast food Mexican restaurant. Chipotle vibes,
+                          Pretty good ;)
+                        </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          21 Suffolk St, Dublin 2, D02 WA48, Irland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="http://pablopicante.com/assets/Uploads/clarendon-burrito-1.jpg"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Pablo Picante</h5>
+                        <p class="card-text">
+                          Don’t go for those fast food places if you can go to
+                          independently owned restaurants. Check out Pablo
+                          Picante: The interior is quirky and colorful but most
+                          importantly, the burrito is freaking goooooood. Next
+                          to the restaurant Is the Torta Shop. Here you can get
+                          Tortas – traditional Mexican-style gourmet sandwiches.
+                        </p>
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          4 Clarendon Market, Dublin Southside, Dublin, D02
+                          AV84, Irland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="collapse multi-collapse" id="dessertsSweets">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="/images/Food/murphys.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Murphy's Ice Cream</h5>
+                        <p class="card-text">
+                          It’s a hot day and you need to cool down? Or you’re
+                          just in the mood for the best ice cream in the entire
+                          world? Head down to Wicklow Street and get yourself a
+                          flavourful treat. Favourite flavours include: Gin, Sea
+                          Salt and Brown Bread Ice Cream (fucking trust me on
+                          this one!)
+                        </p>
+
+                        <p>
+                          <b>
+                            And hey, if you ever find yourself in Dingle, check
+                            out the original shop there!
+                          </b>
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          27 Wicklow St, Dublin 2, D02 WN51, Irland
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="/images/Food/Donuts/IMG_1464.JPG"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">The Rolling Donut</h5>
+                        <p class="card-text">
+                          Scene. Your on O’Connell Street. Your stomach starts
+                          rumbling and you need to find a quick snack. As you
+                          walk up the streets you spot what looks like an old
+                          fashioned cinema ticket booth. As you get closer you
+                          smell the heavenly scent of fat and sugar. It’s a
+                          donut booth. You’re saved.
+                        </p>
+
+                        <p
+                          class="location"
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          O’Connell Street Lower, North City, Dublin, D01 P2C7,
+                          Irland
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>

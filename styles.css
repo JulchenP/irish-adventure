@@ -99,8 +99,11 @@ a:hover {
   border-radius: 20px;
   border-color: var(--border-color);
   border-style: solid 2px;
-  margin: 0 20px;
   color: #e57a44;
+}
+
+.choice {
+  margin: 0 10px;
 }
 
 .btn:hover {
@@ -123,6 +126,10 @@ a:hover {
 .drinkSelector,
 .whiskySection {
   padding: 40px 250px;
+}
+
+.drinkSelector {
+  margin-top: 40px;
 }
 
 .foodSelector {
@@ -194,10 +201,6 @@ a:hover {
   padding-top: 50px;
 }
 
-.content {
-  padding: 50px 0;
-}
-
 .containerFooter {
   width: auto;
   max-width: 680px;
@@ -232,7 +235,7 @@ a:hover {
   margin-top: 50px;
 }
 
-#whiskySpot {
+.whiskyStyle {
   color: var(--border-color);
   border-bottom: solid 1px #e57a44;
 }
@@ -305,24 +308,28 @@ a:hover {
 .nav-link {
   font-family: var(--headline-fonts);
   text-decoration: none;
-  color: white;
+  color: white !important;
   cursor: pointer;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--border-color);
+  color: var(--border-color) !important;
   font-weight: 400;
 }
 
-.nav-link:active {
-  color: var(--border-color);
+.nav-link.active {
+  color: var(--border-color) !important;
+}
+
+.bg-dark {
+  background-color: var(--darkness) !important;
 }
 
 .navbar-brand {
   font-family: var(--headline-fonts);
   text-transform: uppercase;
-  color: var(--clover-color);
+  color: var(--clover-color) !important;
   letter-spacing: 1.5px;
   font-size: 1.5rem;
 }
@@ -384,13 +391,23 @@ nav {
     letter-spacing: 2px;
     font-size: 28px;
     text-transform: uppercase;
+    padding-top: 40px;
+  }
+
+  h4 {
+    padding: 20px 0 5px 0;
+    line-height: 25px;
   }
 
   p {
-    font-size: 16px;
-    line-height: 1.8rem;
+    font-size: 14px;
+    line-height: 1.5rem;
     letter-spacing: 0.5px;
     margin: 0;
+  }
+
+  .location {
+    padding-top: 20px;
   }
 
   .hero {
@@ -414,5 +431,77 @@ nav {
   .heyThorben {
     letter-spacing: 0.2rem;
     line-height: 30px;
+  }
+
+  .lookingFor,
+  .needAdvice,
+  .about,
+  .activities,
+  .foodSelector,
+  .drinkSelector,
+  .whiskySection {
+    padding: 0 50px;
+    padding-bottom: 50px;
+  }
+
+  .accordion-header {
+    padding-top: 0;
+  }
+
+  .activities {
+    padding: 0 20px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-dark:focus,
+  .navbar-toggler:focus,
+  navbar:focus {
+    outline: none;
+    color: rgba(255, 255, 255, 0);
+  }
+
+  .navbar-toggler {
+    font-size: 0.8rem;
+  }
+
+  .foodMenu {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 273px;
+  }
+
+  ul,
+  li {
+    font-size: 14px;
+  }
+
+  .textGreen {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .strongerText {
+    padding: 15px 0 10px 0;
+    line-height: 20px;
+  }
+
+  .slider {
+    padding: 20px;
+  }
+
+  .choice {
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 5px;
+    height: 90px;
+    vertical-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 }

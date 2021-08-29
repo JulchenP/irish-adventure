@@ -35,7 +35,7 @@
   </head>
   <body>
     <container>
-      <nav class="navbar navbar-expand-lg sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/home.html"
             >Irish <b style="color: #e57a44">Adventure</b></a
@@ -55,14 +55,14 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/food.html"
+                <a class="nav-link" aria-current="page" href="/food.html"
                   >Food</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/drinks.html">Drinks</a>
+                <a class="nav-link active" href="/drinks.html">Drinks</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/dublin.html">Dublin</a>
@@ -87,239 +87,336 @@
             <p class="slider">
               Feel that itch in your throat? You need a good ale!
             </p>
-            <p id="arrow">↓</p>
+            <a id="arrow" href="#start">↓</a>
           </span>
         </div>
       </section>
-      <div class="needAdvice mt-0 mb-5">
-        <h2 class="mb-3">Hear that? That's a Guinness calling for you!</h2>
-        <p class="textGreen">
-          Before you head out for a pint (or a few) you need to fill your
-          stomach with something delicious. To make the choice less complicated
-          and to give you an idea of the different foods available to you,
-          here's a list of my favorite restaurants all around the city.
-        </p>
-        <div class="drinkChoice">
-          <div>
-            <a href="#classicPubs"> <p class="btn">Classic Pubs</p></a>
-          </div>
-          <div>
-            <a href="#whiskySpot"> <p class="btn">For Whisky Lovers</p> </a>
-          </div>
-          <div>
-            <a href="#"> <p class="btn">Cafés</p> </a>
-          </div>
-        </div>
-      </div>
-      <div class="drinkSelector">
-        <h2 id="classicPubs">Classic Pubs</h2>
-        <div class="row">
-          <div class="col-6">
-            <h4>J.W. Sweetman</h4>
-            <p>
-              This was my favorite pub back in 2014. They have a great selection
-              of beers and as they're right on the Quay you can enjoy a
-              beautiful water view while sipping on your drink.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              1-2 Burgh Quay, Dublin 2, D02 F243, Ireland
-            </p>
-          </div>
-          <div class="col-6 drinkImage">
-            <img
-              src="http://dublinpubs.com/wp-content/uploads/2016/03/j-w-sweetman-craft-brewery-pub-exterior-1024x683.jpg"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-6 drinkImage">
-            <img
-              src="https://i0.wp.com/marysbar.ie/wp-content/uploads/2016/11/Bar-Sweets.jpg?resize=1250%2C500&ssl=1"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-          <div class="col-6">
-            <h4>Mary’s Bar & Hardware</h4>
-            <p>
-              Never heard Bar & Hardware in a shop name before? Well, now you
-              have. This little bar offers an excellent selection of beer and if
-              you ever run out of batteries, you’ll get those here too!
-              „Interested in hearing a joke about our hardware section? Sorry,
-              it’s under construction!“
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              8 Wicklow St, Dublin 2, D02 AX90, Irland
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-6">
-            <h4>The Duke</h4>
-            <p>
-              Ideally situated close to the city centre on historic Duke street,
-              this old watering hole, which takes it’s title from the little
-              street named after the 2nd Duke of Grafton, has been providing
-              liquid refreshment and sustenance to the people of Dublin since
-              1822.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              9 Duke St, Dublin 2, D02 NR76, Irland
-            </p>
-          </div>
-          <div class="col-6 drinkImage">
-            <img
-              src="https://lh3.googleusercontent.com/proxy/7urw73xEMCDQnxe7RMMU1pUWWdY71wmuI07b1kh8RDlZmnNQBc1DJyKQvJA5cNBdsKpEopI4_nBGmKy68WP0-tkthocVaVRaQslTnrI4xfJeCdaa7gN4i2glbiU3LHTUiw"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-6 drinkImage">
-            <img
-              src="https://www.galwaybaybrewery.com/img/brewdock/the-brew-dock-draft-beer-bar-dublin-06.jpg"
-              alt=""
-              style="
-                width: 100%;
-                height: 337px;
-                object-fit: cover;
-                object-position: 20% 0;
-              "
-            />
-          </div>
-          <div class="col-6">
-            <h4>The Brew Dock</h4>
-            <p>
-              Next to the central bus station you’ll find this nice and cosy
-              pub. They have a huge range of imported and local bottled beers.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              1 Amiens St, Mountjoy, Dublin 1, Irland
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-6">
-            <h4>The Woolshed Baa & Grill</h4>
-            <p>
-              Have never been for food, but can totally recommend for watching
-              football games with you peers. They have stadium-like seats and
-              the „Dublin German Speaker“ go there quite often.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              198-200, Parnell St, Centre, Dublin, D01 K5N8, Irland
-            </p>
-          </div>
-          <div class="col-6 drinkImage">
-            <img
-              src="https://lh3.googleusercontent.com/proxy/qPtYAY2-ZuhCuy2t2X5lQNHL_FG1DJSYMBh4gdoH9GNNM_sVP5NF5GIo8S0tG64EiEDMIXkGMuxfpq3TshF1YpNUanGFsyMRIdGYyv2U45k5SzEKtSfFVWmg2vlfjuXqrw"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="whiskySection">
-        <h2 id="whiskySpot" class="mt-5">For Whisky Lovers</h2>
-        <div class="row">
-          <div class="col-6">
-            <h4 class="drinkText">Dingle Whiskey Bar</h4>
-            <p>
-              Hands down my favourite spot to drink whisky in Dublin. It’s such
-              a quaint bar, loads of barrel parts on the wall and the bartenders
-              are a joy to talk to. They also offer tastings which I haven’t had
-              the chance to check out but would totally do it! Selection of
-              whiskies is great. It’s ajoined to the Porterhouse Brew Pub, which
-              is nice enough too.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              44 Nassau St, Dublin 2, Irland
-            </p>
-          </div>
-          <div class="col-6 drinkImage">
-            <img
-              src="images/Dingle/IMG_1908_bar.JPG"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="drinkSelector">
-        <h2 id="cafes">Cafés</h2>
-        <div class="row">
-          <div class="col-6 drinkImage">
-            <img
-              src="images/Food/bewleys.JPG"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-          <div class="col-6">
-            <h4>Bewley's Café</h4>
-            <p>
-              Ever wondered what the perfect cup of tea tastes like? Wonder no
-              more! In the (I have to admit touristy) world-famous Bewley’s Café
-              you can choose between a selection of teas and enjoy a scone with
-              it too! It’s been there for ages, my mum used to go there when she
-              was still in college.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              119 Grafton Street, Dublin, D02 E620, Ireland
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="row">
-          <div class="col-6">
-            <h4>Café Nero</h4>
-            <p>
-              Are you craving a dose of caffeine? Forget about Starbucks. Café
-              Nero is literally just another international Coffee House Chain,
-              but their coffee tastes better, it’s cheaper and the scones are
-              nice too! Give it a shot.
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              Litteraly anywhere in town. Skip Starkbucks.
-            </p>
-          </div>
-          <div class="col-6 drinkImage">
-            <img
-              src="https://d36bl1cjgcfngd.cloudfront.net/wp-content/uploads/sites/3/2016/11/13094639/caffe-nero-ireland-coffee-house-collage1.jpg"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-        </div>
+      <div class="content" id="start">
+        <div class="needAdvice mt-0">
+          <h2 class="mb-3">Hear that? That's a Guinness calling for you!</h2>
+          <p class="textGreen">
+            Instead of opting for the touristy choice that is Temple Bar, why
+            don't you check out some of these more local gems? Most pubs offer a
+            great selection of beers, ales and also whisk(e)ys. And they aren't
+            as pricey as Temple Bar.
+          </p>
+          <p class="textGreen strongerText" style="font-weight: bold">
+            <b> The different kind of beers you should try are:</b>
+          </p>
 
-        <hr />
-        <div class="row">
-          <div class="col-6 drinkImage">
-            <img
-              src="https://media-cdn.tripadvisor.com/media/photo-s/15/90/7a/46/the-grand-bar-at-cafe.jpg"
-              alt=""
-              style="width: 100%; height: 337px; object-fit: cover"
-            />
-          </div>
-          <div class="col-6">
-            <h4>Café en Seine</h4>
-            <p>
-              Want to take a break from Irish pubs? How about fleeing Paris even
-              it’s just for a coffee or an enjoyable jazz night? (Great place to
-              take a date to, too!)
-            </p>
-            <p style="font-size: smaller; text-transform: uppercase">
-              40 Dawson St, Dublin, Irland
-            </p>
+          <ul class="textGreen">
+            <li>Stout (e.g. Guinness)</li>
+            <li>Irish Red Ale (e.g. Kilkenny Red Ale)</li>
+            <li>Irish Lager (e.g. Harp)</li>
+            <li>
+              Craft Beer (They have a lot of options, just try whatever's on
+              tap)
+            </li>
+          </ul>
+          <p class="textGreen">
+            Another popular drink choice is cider! The sour and fruity drink is
+            a great alternative if you don't feel like drinking a heavy beer.
+            It's not everybody's taste though.
+          </p>
+          <div class="drinkChoice">
+            <div>
+              <a href="#classicPubs"> <p class="btn choice">Classic Pubs</p></a>
+            </div>
+            <div>
+              <a href="#whiskySpot">
+                <p class="btn choice">For Whisky Lovers</p>
+              </a>
+            </div>
+            <div>
+              <a href="#cafes"> <p class="btn choice">Cafés</p> </a>
+            </div>
           </div>
         </div>
+        <div class="drinkSelector" id="classicPubs">
+          <h2>Classic Pubs</h2>
+          <div class="row">
+            <div class="col">
+              <h4>J.W. Sweetman</h4>
+              <p>
+                This was my favorite pub back in 2014. They have a great
+                selection of beers and as they're right on the Quay you can
+                enjoy a beautiful water view while sipping on your drink.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                1-2 Burgh Quay, Dublin 2, D02 F243, Ireland
+              </p>
+            </div>
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="http://dublinpubs.com/wp-content/uploads/2016/03/j-w-sweetman-craft-brewery-pub-exterior-1024x683.jpg"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="https://i0.wp.com/marysbar.ie/wp-content/uploads/2016/11/Bar-Sweets.jpg?resize=1250%2C500&ssl=1"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+            <div class="col">
+              <h4>Mary’s Bar & Hardware</h4>
+              <p>
+                Never heard Bar & Hardware in a shop name before? Well, now you
+                have. This little bar offers an excellent selection of beer and
+                if you ever run out of batteries, you’ll get those here too!
+                „Interested in hearing a joke about our hardware section? Sorry,
+                it’s under construction!“
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                8 Wicklow St, Dublin 2, D02 AX90, Irland
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <h4>The Duke</h4>
+              <p>
+                Ideally situated close to the city centre on historic Duke
+                street, this old watering hole, which takes it’s title from the
+                little street named after the 2nd Duke of Grafton, has been
+                providing liquid refreshment and sustenance to the people of
+                Dublin since 1822.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                9 Duke St, Dublin 2, D02 NR76, Irland
+              </p>
+            </div>
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="https://lh3.googleusercontent.com/proxy/7urw73xEMCDQnxe7RMMU1pUWWdY71wmuI07b1kh8RDlZmnNQBc1DJyKQvJA5cNBdsKpEopI4_nBGmKy68WP0-tkthocVaVRaQslTnrI4xfJeCdaa7gN4i2glbiU3LHTUiw"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="https://www.galwaybaybrewery.com/img/brewdock/the-brew-dock-draft-beer-bar-dublin-06.jpg"
+                alt=""
+                style="
+                  width: 100%;
+                  height: 337px;
+                  object-fit: cover;
+                  object-position: 20% 0;
+                "
+              />
+            </div>
+            <div class="col">
+              <h4>The Brew Dock</h4>
+              <p>
+                Next to the central bus station you’ll find this nice and cosy
+                pub. They have a huge range of imported and local bottled beers.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                1 Amiens St, Mountjoy, Dublin 1, Irland
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <h4>The Woolshed Baa & Grill</h4>
+              <p>
+                Have never been for food, but can totally recommend for watching
+                football games with you peers. They have stadium-like seats and
+                the „Dublin German Speaker“ go there quite often.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                198-200, Parnell St, Centre, Dublin, D01 K5N8, Irland
+              </p>
+            </div>
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="https://lh3.googleusercontent.com/proxy/qPtYAY2-ZuhCuy2t2X5lQNHL_FG1DJSYMBh4gdoH9GNNM_sVP5NF5GIo8S0tG64EiEDMIXkGMuxfpq3TshF1YpNUanGFsyMRIdGYyv2U45k5SzEKtSfFVWmg2vlfjuXqrw"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="whiskySection" id="whiskySpot">
+          <h2 class="mt-5 whiskyStyle">For Whisky Lovers</h2>
+          <div class="row">
+            <div class="col">
+              <h4 class="drinkText">Dingle Whiskey Bar</h4>
+              <p>
+                Hands down my favourite spot to drink whisky in Dublin. It’s
+                such a quaint bar, loads of barrel parts on the wall and the
+                bartenders are a joy to talk to. They also offer tastings which
+                I haven’t had the chance to check out but would totally do it!
+                Selection of whiskies is great. It’s ajoined to the Porterhouse
+                Brew Pub, which is nice enough too.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                44 Nassau St, Dublin 2, Irland
+              </p>
+            </div>
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="images/Dingle/IMG_1908_bar.JPG"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="drinkSelector mt-5" id="cafes">
+          <h2>Cafés</h2>
+          <div class="row">
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="images/Food/bewleys.JPG"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+            <div class="col">
+              <h4>Bewley's Café</h4>
+              <p>
+                Ever wondered what the perfect cup of tea tastes like? Wonder no
+                more! In the (I have to admit touristy) world-famous Bewley’s
+                Café you can choose between a selection of teas and enjoy a
+                scone with it too! It’s been there for ages, my mum used to go
+                there when she was still in college.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                119 Grafton Street, Dublin, D02 E620, Ireland
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col">
+              <h4>Café Nero</h4>
+              <p>
+                Are you craving a dose of caffeine? Forget about Starbucks. Café
+                Nero is literally just another international Coffee House Chain,
+                but their coffee tastes better, it’s cheaper and the scones are
+                nice too! Give it a shot.
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                Litteraly anywhere in town. Skip Starkbucks.
+              </p>
+            </div>
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="https://d36bl1cjgcfngd.cloudfront.net/wp-content/uploads/sites/3/2016/11/13094639/caffe-nero-ireland-coffee-house-collage1.jpg"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+          </div>
+
+          <hr />
+          <div class="row">
+            <div class="col d-none d-lg-block drinkImage">
+              <img
+                class="img-fluid"
+                src="https://media-cdn.tripadvisor.com/media/photo-s/15/90/7a/46/the-grand-bar-at-cafe.jpg"
+                alt=""
+                style="width: 100%; height: 337px; object-fit: cover"
+              />
+            </div>
+            <div class="col">
+              <h4>Café en Seine</h4>
+              <p>
+                Want to take a break from Irish pubs? How about fleeing Paris
+                even it’s just for a coffee or an enjoyable jazz night? (Great
+                place to take a date to, too!)
+              </p>
+              <p
+                class="location"
+                style="font-size: smaller; text-transform: uppercase"
+              >
+                40 Dawson St, Dublin, Irland
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container>
+    <container>
+      <div class="container">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <p class="col-md-3 mb-0 text-muted">
+            &copy; 2021 Julia Pöppelmann
+            <br />
+            Open source code here
+          </p>
+
+          <ul class="nav col-md-3 justify-content-end">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">About</a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </container>
   </body>
