@@ -91,6 +91,29 @@
           </span>
         </div>
       </section>
+      <div class="needAdvice mt-0">
+        <h2 class="mb-3">How about a bite to eat?</h2>
+        <p class="textGreen">
+          Before you head out for a pint (or a few) you need to fill your
+          stomach with something delicious. To make the choice less complicated
+          and to give you an idea of the different foods available to you,
+          here's a list of my favorite restaurants all around the city.
+        </p>
+        <h4>Early Bird Menu</h4>
+        <p class="textGreen">
+          Somethign to consider when your appetite is large but your purse says
+          broke – Early Bird Menus. Most restaurants offer them and I know
+          you're familiar with the concept as we do occasionally have them in
+          Germany also (e.g. at Bun Bites Beef). Dinner time starts around 6 pm
+          in Ireland, so EBM are usally between 4 pm to 6 pm.
+        </p>
+        <p class="textGreen">
+          <b>
+            Wheter it's a tradtional irish potato dish or a yummy burrito,
+            you'll never go unsatisfied at these restaurants.
+          </b>
+        </p>
+      </div>
       <div class="foodSelector">
         <h2>What are you in the mood for?</h2>
 
@@ -158,11 +181,31 @@
             class="btn foodMenu"
             type="button"
             data-bs-toggle="collapse"
+            data-bs-target="#middleEastern"
+            aria-expanded="false"
+            aria-controls="middleEastern"
+          >
+            Middle Eastern
+          </a>
+          <a
+            class="btn foodMenu"
+            type="button"
+            data-bs-toggle="collapse"
             data-bs-target="#mexican"
             aria-expanded="false"
             aria-controls="mexican"
           >
             Mexican
+          </a>
+          <a
+            class="btn foodMenu"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#veggieVegan"
+            aria-expanded="false"
+            aria-controls="veggieVegan"
+          >
+            Veggie / Vegan
           </a>
           <a
             class="btn foodMenu"
@@ -179,7 +222,7 @@
           <div class="row">
             <div class="collapse multi-collapse row" id="italian">
               <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
+                <div class="col mb-2">
                   <div class="card h-100">
                     <img
                       src="https://thebigbluebusireland.files.wordpress.com/2014/02/861016_549909348420029_2135871204_o.jpg?w=500&h=373&zoom=2"
@@ -210,9 +253,88 @@
             </div>
           </div>
           <div class="row">
+            <div class="collapse multi-collapse row" id="veggieVegan">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col mb-2">
+                  <div class="card h-100">
+                    <img
+                      src="images/Food/cornucopia.JPG"
+                      class="card-img-top"
+                      style="width: 100%; height: 337px; object-fit: cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cornucopia</h5>
+                      <p class="card-text">
+                        Ever feel like you need healthy, vegetarian food for a
+                        change? Me neither, but if you do, Cornucopia is the
+                        restaurant for you. It has a great selection of meals
+                        and the quality is outstanding.
+                      </p>
+
+                      <p style="font-size: smaller; text-transform: uppercase">
+                        19-20 Wicklow St, Dublin, D02 FK27, Irland
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="collapse multi-collapse row" id="middleEastern">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col mb-2">
+                  <div class="card h-100">
+                    <img
+                      src="/images/Food/brother-hubbard.JPG"
+                      class="card-img-top"
+                      style="width: 100%; height: 337px; object-fit: cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Brother Hubbard</h5>
+                      <p class="card-text">
+                        I’ll let the brothers talk for this one:
+                        <br />
+                        <i
+                          >„Our food is designed to offer nourishment and
+                          pleasure, and above all, you should feel better for
+                          having had it. That is not an experience that happens
+                          as often as any of us would like. We try to make pure
+                          food that is healthy and full of freshness, providing
+                          a feel-good quality without compromising on enjoyment.
+                          We don’t sermonise and ask you to change your
+                          lifestyle. We genuinely feel that this is food you
+                          might enjoy, and you might just happen to feel better
+                          after having eaten it.“</i
+                        >
+                      </p>
+                      <p>
+                        <b
+                          >Delicious, healthy, Middle Eastern style. Perfect for
+                          breakfast, brunch, lunch and dinner.</b
+                        >
+                      </p>
+
+                      <p style="font-size: smaller; text-transform: uppercase">
+                        <b> LOCATION NORTH </b>153 Capel St, North City, Dublin
+                        1, Irland
+                      </p>
+                      <p style="font-size: smaller; text-transform: uppercase">
+                        <b> LOCATION SOUTH </b>46 Harrington St, Saint Kevin’s,
+                        Dublin 8, Irland
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
             <div class="collapse multi-collapse" id="asian">
               <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
+                <div class="col mb-2">
                   <div class="card h-100">
                     <img
                       src="/images/Food/mongolian-grill.JPG"
@@ -241,7 +363,7 @@
                   </div>
                 </div>
 
-                <div class="col">
+                <div class="col mb-2">
                   <div class="card h-100">
                     <img
                       src="https://media-cdn.tripadvisor.com/media/photo-s/13/14/d2/e0/photo2jpg.jpg"
@@ -272,10 +394,89 @@
         <div class="row">
           <div class="collapse multi-collapse" id="traditionalIrish">
             <div class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="card card-body">
-                Some placeholder content for the second collapse component of
-                this multi-collapse example. This panel is hidden by default but
-                revealed when the user activates the relevant trigger.
+              <div class="col mb-2">
+                <div class="card h-100">
+                  <img
+                    src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.6435-9/192098691_4056449911074816_3522573619258268080_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=a26aad&_nc_ohc=QjnqHz1sNZAAX_ZrH1l&_nc_ht=scontent-frx5-1.xx&oh=6f73303945d1382b7b78b6ed1314db9a&oe=6150AA4D"
+                    class="card-img-top"
+                    style="width: 100%; height: 337px; object-fit: cover"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Gallagher’s Boxty House</h5>
+                    <p class="card-text">
+                      I’ve personally never been, but if you want to try out the
+                      best potato dishes in town you have to stop by the Boxty
+                      House. It’s the restaurant Phil Rosenthal went to in
+                      season 2 on „Somebody feed Phil“.
+                    </p>
+
+                    <p style="font-size: smaller; text-transform: uppercase">
+                      20-21 Temple Bar, Dublin 2, D02 ET66, Irland
+                      <br />
+                      <a href="https://www.boxtyhouse.ie/">Website</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="card h-100">
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/590af1f0e4fcb5f1d7bcfb50/1557837594163-Q2EBK5SSD9OBZA8BHI09/Soma+Location+Shots+%2818%29.jpg?format=1500w"
+                    class="card-img-top"
+                    style="width: 100%; height: 337px; object-fit: cover"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">SoMa Restaurant</h5>
+                    <p class="card-text"></p>
+                    <p>
+                      <b
+                        >Voted No. 7 in Dublin’s best burger restaurants (Irish
+                        Independent).
+                      </b>
+                    </p>
+                    <p>
+                      Freshly made, locally sourced burgers and other delicacies
+                      (I heard the Mexican fish tacos are nice!) up for grabs!
+                      Get in there.
+                    </p>
+                    <p style="font-size: smaller; text-transform: uppercase">
+                      1 O'Connell Street Upper, North City, Dublin 1, D01 HR04,
+                      Ireland
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-2">
+                <div class="card h-100">
+                  <img
+                    src="https://whitemoosecafe.ie/wp-content/uploads/2020/03/whitemoose.png"
+                    class="card-img-top"
+                    style="width: 100%; height: 337px; object-fit: cover"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">White Moose Café</h5>
+                    <p class="card-text">
+                      I’ve personally never been, but it is on my list. If you
+                      ever find yourself up north go check it out. Located
+                      inside a B&B this little café offers their famous pancake
+                      variations and other diabetes inducing delicacies. Don’t
+                      quarrel with the owner though – you made get publicly told
+                      off on his twitter account
+                      <a href="https://twitter.com/whitemoosecafe?lang=en"
+                        >@whitemoosecafe</a
+                      >
+                      .
+                    </p>
+
+                    <p style="font-size: smaller; text-transform: uppercase">
+                      268, 272 N Circular Rd, Phibsborough, Dublin, D07 DT61,
+                      Ireland
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -292,7 +493,7 @@
             <div class="row">
               <div class="collapse multi-collapse" id="american">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
-                  <div class="col">
+                  <div class="col mb-2">
                     <div class="card h-100">
                       <img
                         src="https://theworkmansclub.com/wp-content/uploads/2015/05/Rooftop-Terraceb-970x420.jpg"
@@ -323,32 +524,34 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                  <div class="col mb-2">
+                    <div class="card h-100">
+                      <img
+                        src="https://thebigbluebusireland.files.wordpress.com/2014/02/861016_549909348420029_2135871204_o.jpg?w=500&h=373&zoom=2"
+                        class="card-img-top"
+                        style="width: 100%; height: 337px; object-fit: cover"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">The Bernhard Shaw</h5>
+                        <p class="card-text">
+                          There’s literally a big blue bus in the backyard of
+                          this pub. They serve pizza in there! Need I say more?
+                        </p>
 
-                <div class="col">
-                  <div class="card h-100">
-                    <img
-                      src="https://thebigbluebusireland.files.wordpress.com/2014/02/861016_549909348420029_2135871204_o.jpg?w=500&h=373&zoom=2"
-                      class="card-img-top"
-                      style="width: 100%; height: 337px; object-fit: cover"
-                      alt="..."
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">The Bernhard Shaw</h5>
-                      <p class="card-text">
-                        There’s literally a big blue bus in the backyard of this
-                        pub. They serve pizza in there! Need I say more?
-                      </p>
-
-                      <p style="font-size: smaller; text-transform: uppercase">
-                        Cross Guns Bridge, Drumcondra, Dublin 9, D09 XW44,
-                        Irland
-                      </p>
-
-                      <p style="font-size: x-small; text-transform: uppercase">
-                        photo ©
-                        https://thebigbluebusireland.wordpress.com/about/
-                      </p>
+                        <p
+                          style="font-size: smaller; text-transform: uppercase"
+                        >
+                          Cross Guns Bridge, Drumcondra, Dublin 9, D09 XW44,
+                          Irland
+                        </p>
+                        <p
+                          style="font-size: x-small; text-transform: uppercase"
+                        >
+                          photo ©
+                          https://thebigbluebusireland.wordpress.com/about/
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -358,8 +561,8 @@
           <div class="row">
             <div class="collapse multi-collapse" id="mexican">
               <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                  <div class="card h-100">
+                <div class="col mb-2">
+                  <div class="card h-100 mb-2">
                     <img
                       src="/images/Food/mamas-revenge.jpeg"
                       class="card-img-top"
@@ -378,7 +581,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col mb-2">
                   <div class="card h-100">
                     <img
                       src="/images/Little Ass Burrito/IMG_4956.JPG"
@@ -405,7 +608,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col mb-2">
                   <div class="card h-100">
                     <div class="card-body">
                       <h5 class="card-title">Tolteca</h5>
@@ -419,7 +622,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col mb-2">
                   <div class="card h-100">
                     <div class="card-body">
                       <h5 class="card-title">Pablo Picante</h5>
@@ -443,14 +646,106 @@
           </div>
           <div class="row">
             <div class="collapse multi-collapse" id="dessertsSweets">
-              <div class="card card-body">
-                Some placeholder content for the second collapse component of
-                this multi-collapse example. This panel is hidden by default but
-                revealed when the user activates the relevant trigger.
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col mb-2">
+                  <div class="card h-100">
+                    <img
+                      src="/images/Food/murphys.JPG"
+                      class="card-img-top"
+                      style="width: 100%; height: 337px; object-fit: cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Murphy's Ice Cream</h5>
+                      <p class="card-text">
+                        It’s a hot day and you need to cool down? Or you’re just
+                        in the mood for the best ice cream in the entire world?
+                        Head down to Wicklow Street and get yourself a
+                        flavourful treat. Favourite flavours include: Gin, Sea
+                        Salt and Brown Bread Ice Cream (fucking trust me on this
+                        one!)
+                      </p>
+
+                      <p>
+                        <b>
+                          And hey, if you ever find yourself in Dingle, check
+                          out the original shop there!
+                        </b>
+                      </p>
+
+                      <p style="font-size: smaller; text-transform: uppercase">
+                        27 Wicklow St, Dublin 2, D02 WN51, Irland
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-2">
+                  <div class="card h-100">
+                    <img
+                      src="/images/Food/Donuts/IMG_1464.JPG"
+                      class="card-img-top"
+                      style="width: 100%; height: 337px; object-fit: cover"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">The Rolling Donut</h5>
+                      <p class="card-text">
+                        Scene. Your on O’Connell Street. Your stomach starts
+                        rumbling and you need to find a quick snack. As you walk
+                        up the streets you spot what looks like an old fashioned
+                        cinema ticket booth. As you get closer you smell the
+                        heavenly scent of fat and sugar. It’s a donut booth.
+                        You’re saved.
+                      </p>
+
+                      <p style="font-size: smaller; text-transform: uppercase">
+                        O’Connell Street Lower, North City, Dublin, D01 P2C7,
+                        Irland
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <p class="col-md-3 mb-0 text-muted">
+            &copy; 2021 Julia Pöppelmann
+            <br />
+            Open source code here
+          </p>
+
+          <ul class="nav col-md-3 justify-content-end">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">About</a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </container>
   </body>

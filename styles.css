@@ -17,7 +17,8 @@ h3 {
 }
 
 h1,
-h2 {
+h2,
+h5 {
   font-family: var(--headline-fonts);
 }
 
@@ -55,6 +56,19 @@ h3 {
   margin: 0 !important ;
 }
 
+h4 {
+  font-family: var(--headline-fonts);
+  color: var(--clover-color);
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  margin-bottom: 10px;
+  text-decoration-line: underline;
+  text-decoration-color: var(--clover-color);
+  text-underline-offset: 4px;
+}
+
 p {
   font-family: var(--secondary-font);
 }
@@ -84,6 +98,10 @@ a:hover {
 .needAdvice,
 .foodSelector {
   padding: 40px 250px;
+}
+
+.foodSelector {
+  margin-bottom: 80px;
 }
 
 .about {
@@ -208,6 +226,12 @@ a:hover {
 
 .accordion-body {
   background-color: #dfeadf;
+  font-family: var(--secondary-font);
+  color: var(--clover-color);
+  letter-spacing: 0.25px;
+}
+
+.textGreen {
   font-family: var(--secondary-font);
   color: var(--clover-color);
   letter-spacing: 0.25px;
