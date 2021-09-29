@@ -73,6 +73,8 @@ h4 {
 footer {
   font-family: var(--headline-fonts);
   font-size: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 p {
@@ -519,5 +521,9 @@ nav {
     justify-content: center;
     align-items: center;
     display: flex;
+  }
+
+  footer {
+    padding: 0 10px;
   }
 }
