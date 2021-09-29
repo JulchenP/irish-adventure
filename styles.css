@@ -134,11 +134,13 @@ hr {
 .needAdvice,
 .foodSelector,
 .drinkSelector,
-.whiskySection {
+.whiskySection,
+.dublinSelector {
   padding: 40px 250px;
 }
 
-.drinkSelector {
+.drinkSelector,
+.dublinSelector {
   margin-top: 40px;
 }
 
@@ -452,7 +454,8 @@ nav {
   .activities,
   .foodSelector,
   .drinkSelector,
-  .whiskySection {
+  .whiskySection,
+  .dublinSelector {
     padding: 0 50px;
     padding-bottom: 50px;
   }
